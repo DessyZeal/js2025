@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Objects</title>
+</head>
+<body>
+    <p id="domain"></p>
+    <script>
+        const person = {
+            name: "Anaya",
+            age: "5",
+            isStudent: true,
+            greet() {
+                console.log("Hi, I am Anaya")
+            }
+        };
+        person.greet();
+
+        const details = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        }
+        // To display data from object
+        document.getElementById("domain").innerHTML = details.firstName + " is " + details.age + " years old";
+
+        const studentDetails = {
+            name:"Anabel",
+            
+        }
+    </script>
+</body>
+</html>
