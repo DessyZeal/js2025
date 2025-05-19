@@ -29,8 +29,15 @@
 
         const studentDetails = {
             name:"Anabel",
-            
-        }
+            age: 7,
+            grade:"1B",
+            subjects: ["English", "Math", "Biology"],
+
+            introduce() {
+                console.log(`Hi, My name is ${this.name} and I'm in grade ${this.grade}`);
+            }
+        };
+        studentDetails.introduce();
     </script>
 </body>
 </html>
