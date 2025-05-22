@@ -7,13 +7,14 @@
 </head>
 <body>
     <p id="domain"></p>
+    <p id="demo"></p>
     <script>
         const person = {
             name: "Anaya",
             age: "5",
             isStudent: true,
             greet() {
-                console.log("Hi, I am Anaya")
+                console.log("This is " + this.name);
             }
         };
         person.greet();
@@ -38,6 +39,16 @@
             }
         };
         studentDetails.introduce();
+        // JAVASCRIPT OBJECT METHODS
+        const person1 = {
+            firstName1: "Desire",
+            lastName1: "Ude",
+            id: 5566,
+            fullName1: function() {
+                return this.firstName1 + " " + this.lastName1;
+            }
+        };
+        document.getElementById("demo").innerHTML = person1.fullName1();
     </script>
 </body>
 </html>
