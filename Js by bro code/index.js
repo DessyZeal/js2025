@@ -44,3 +44,33 @@ let student = true;
 document.getElementById("p1").innerHTML = `My name is ${fullName}`;
 document.getElementById("p2").innerHTML = `I am ${age} yrs old`;
 document.getElementById("p3").innerHTML = `Enrolled: ${student}`;
+
+// js arithmetic operators
+
+let students = 30;
+
+// students = students + 1;
+// students = students - 1;
+// students = students * 2;
+// students = students % 3;
+
+// agumented assignment operators
+// students += 2;
+// students -= 1;
+// students *= 2;
+
+// increment and document operator
+// students++;
+// students--;
+
+/* operator presedence 
+1.parenthesis () 
+2. exponents
+3. multiplication and division and modulo
+4. addition and subtraction
+*/
+
+let result = 1 + 2 * 3 + 4 ** 2;
+let ex = 12 % 5 + 8 / 2;
+console.log(ex);
+console.log(result);
