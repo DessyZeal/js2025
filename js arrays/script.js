@@ -18,4 +18,8 @@ console.log(MyChildren);
 // js array search
 console.log(Favmovies.indexOf("moana"));
 console.log(Favmovies.includes("tinkerbell"));
+// convert the following array into a nice sentence using join
+const hobbies = ["reading", "coding", "drawing"];
+const hobby = `My hobbies are ${hobbies.join(", ")}`;
+console.log(hobby)
 
