@@ -1,8 +1,10 @@
-const Favmovies = ["frozen", "moana", "tinkerbell"];
+const Favmovies = ["frozen", "moana", "tinkerbell","sing"];
 // remove the last item on the array
 Favmovies.pop();
 // add a new movie to the end of the array
 Favmovies.push("migration");
 // check array length
 Favmovies.length;
-console.log(Favmovies);
+// Favmovies[2];
+// console.log(Favmovies.toString());
+console.log(Array.isArray(Favmovies));
