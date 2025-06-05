@@ -21,5 +21,11 @@ console.log(Favmovies.includes("tinkerbell"));
 // convert the following array into a nice sentence using join
 const hobbies = ["reading", "coding", "drawing"];
 const hobby = `My hobbies are ${hobbies.join(", ")}`;
-console.log(hobby)
+console.log(hobby);
+// loop through this array and print each food with the word "is Yummy"
+const foods = ["Rice", "Beans", "Vegetable"];
+
+foods.forEach((food) => {
+    console.log(`${food} is Yummy!`);
+});
 
