@@ -1,6 +1,7 @@
 const random = ["joy", "fruits", "love", "food"];
 random.sort();
 console.log(random);
+
 const months = ["Jan", "Feb", "Mar", "Apr"];
 const sorted = months.toSorted();
 console.log(sorted);
@@ -23,11 +24,13 @@ const num = [20, 5, 15, 30];
 // num.sort((a, b) => a - b);
 num.sort((a, b) => b - a);
 console.log(num);
+
 // sort an array of people by their age
 const people = [
     {name: "Ada", age: 30},
     {name: "Love", age: 20},
     {name: "Bola", age: 29}
 ];
+// Assending oder
 people.sort((a, b) => b.age - a.age);
 console.log(people);
