@@ -31,6 +31,6 @@ const people = [
     {name: "Love", age: 20},
     {name: "Bola", age: 29}
 ];
-// Assending oder
+// desending order
 people.sort((a, b) => b.age - a.age);
 console.log(people);
