@@ -32,3 +32,20 @@ switch (days) {
         console.log("No day");
         break;
 }
+// exercise 2 on switch
+let lightColor = "yellow";
+
+switch (lightColor) {
+    case "red":
+        console.log("Stop");
+        break;
+    case "yellow":
+        console.log("Slow down");
+        break;
+    case "green":
+        console.log("Go");
+        break;
+    default:
+        console.log("Invalid color");
+        break;
+}
