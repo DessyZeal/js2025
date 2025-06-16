@@ -6,7 +6,20 @@
     <title>Document</title>
 </head>
 <body>
+
+    <p id="demo">Hello World!</p>
+    <button onclick="greetFun()">Try me</button>
     <script>
+
+        function greetFun() {
+            let greet = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML = greet.toUpperCase();
+        }
+
+        let text1 = "  Hello World  "
+        let text2 = text1.trim();
+        console.log(text2);
+
         // to get the lenght of a string use the js lenght method
         let jeho = "Jehovawitness";
         console.log(jeho.length);
