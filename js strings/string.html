@@ -39,11 +39,41 @@
         let firstNum = prompt("Enter a first number");
         firstNum = Number(firstNum);
 
+
         let secondNum = prompt("Enter a second number");
         secondNum = Number(secondNum);
 
-        let result = firstNum + secondNum;
-        alert("your result is " + result);
+        let operator = prompt("Enter an operator(+,-,*, or /)");
+
+        function add(a, b) {
+            return a + b;
+        }
+        function sub(a, b) {
+            return a - b;
+        }
+        function mul(a, b) {
+            return a * b;
+        }
+        function div(a, b) {
+            return a / b;
+        }
+
+        let result;
+
+        if (operator === "+") {
+            result = add(firstNum, secondNum);
+        } else if (operator === "-") {
+            result = sub(firstNum, secondNum);
+        } else if (operator === "*") {
+            result = mul(firstNum, secondNum);
+        } else if (operator === "/") {
+            result = div(firstNum, secondNum);
+        } else {
+            alert("invalid operator");
+        }
+        alert("your result is: " + result);
+
+        console.log(firstNum, secondNum);
     </script>
 
 </body>
