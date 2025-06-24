@@ -34,6 +34,20 @@ body {
   z-index: 120;
 }
 
+/* Close button styles */
+.close-btn {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 200;
+}
+
 .menu-btn .bar {
   height: 4px;
   width: 100%;
@@ -74,12 +88,13 @@ body {
     padding: 24px 0;
     background: #7e5df693;
     box-shadow: 0 8px 32px rgba(0,0,0,0.09);
-    gap: 20px;
+    gap: 25px;
     align-items: center;
     display: none; /* Hide menu by default */
     z-index: 100;
   }
-  .nav-links.open {
-    display: flex; /* Show menu when open */
+  .nav-links.open {display: flex;}
+   .close-btn {
+    display: block; /* Show menu when open */
   }
 }
