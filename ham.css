@@ -35,7 +35,7 @@ body {
 }
 
 /* Close button styles */
-.close-btn {
+/* .close-btn {
   display: none;
   position: absolute;
   top: 12px;
@@ -46,7 +46,7 @@ body {
   color: #fff;
   cursor: pointer;
   z-index: 200;
-}
+} */
 
 .menu-btn .bar {
   height: 4px;
@@ -94,7 +94,6 @@ body {
     z-index: 100;
   }
   .nav-links.open {display: flex;}
-   .close-btn {
+   /* .close-btn {
     display: block; /* Show menu when open */
   }
-}
