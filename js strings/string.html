@@ -64,7 +64,20 @@
         let age = 20;
         let message = `My name is ${name} and i am ${age} years old.`;
         console.log(message);
+
+        // how to fimd the position of a substring in a string
+        let str = "Hello, welcome to my world.";
+        let pos = str.indexOf("welcome");
+        console.log(pos); // Output: 7
         
+        // a prompt method that returns hi and the users name
+        let userName = prompt("Enter your name");
+        alert("Hi " + userName);
+
+        // a simple example of a user filling his name and a welcome message is displayed on the screen
+        let user = prompt("Enter your name");
+        alert("Welcome " + user + "!");
+
 
         let firstNum = prompt("Enter a first number");
         firstNum = Number(firstNum);
