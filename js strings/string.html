@@ -81,7 +81,11 @@
         // javascript numbers as objects
         let num1 = new Number(10);
         let num2 = new Number(20);
-        console.log(num1 + num2); // Output: 30
+        console.log( typeof num1 + num2); // Output: 30
+
+        // how to write a large number in javascript
+        let largeNum = BigInt(123456789012345678901234567890);
+        console.log(largeNum); // Output: 123456789012345678901234567890n
 
 
         let firstNum = prompt("Enter a first number");
