@@ -19,6 +19,16 @@
         const yearMonth = new Date(2025, 7);
         console.log(yearMonth);
         // The above code creates a new Date object with the year 2025 and the month
+        // Date using the ISO format
+        const isoDate = new Date("2025-07-01");
+        console.log(isoDate);
+        // The above code creates a new Date object with the date 1st July 2025
+        let msec = Date.parse("2025-07-01");
+        console.log(msec);
+        // The above code converts the date string "2025-07-01" to milliseconds since January 1, 1970
+        // date get methods in javascript
+        const fullYear = new Date("2025-07-01");
+        console.log(fullYear.getFullYear);
 
     </script>
 </body>
