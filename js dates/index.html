@@ -28,7 +28,11 @@
         // The above code converts the date string "2025-07-01" to milliseconds since January 1, 1970
         // date get methods in javascript
         const fullYear = new Date("2025-07-01");
-        console.log(fullYear.getFullYear);
+        console.log(fullYear.getFullYear()); // returns the year (4 digits)
+        console.log(fullYear.getMonth()); // returns the month (0-11)
+        // for the get month method we need to create an array of months to get the full months
+        const months ["Jan", "Feb" "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        console.log(months[fullYear.getMonth()]); // returns the month name
 
     </script>
 </body>
