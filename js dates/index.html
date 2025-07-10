@@ -42,6 +42,16 @@
         console.log(date.setDate(20)); // sets the date to 20th of the month
         console.log(date.getDate()); // returns the day of the month (1-31)
 
+        // comparing 2 dates
+        let text = "";
+        const today1 = new Date();
+        const futureDate = new Date("2100-01-01");
+        if (today1 > futureDate) {
+            text = "Today is before future date.";
+        } else {
+            text = "Today is after future date.";
+        }
+        console.log(text);
     </script>
 </body>
 </html>
