@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const today = new Date();
+        const birthday = new Date(today.getFullYear(), 9, 14);
+        // what does the above line of code mean?
+        // It creates a new Date object representing the birthday on October 14 of the current year.
+        // The Date constructor takes three arguments: year, month (0-indexed, so 9 is October), and day.
+        
+        // const diff = today.getTime() - birthday.getTime();
+        const daysLeft = Math.ceil((birthday.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+        // The line calculates the difference in milliseconds between the birthday and today, then converts that difference
+        // into days by dividing by the number of milliseconds in a day (1000 ms * 60 seconds * 60 minutes * 24 hours).
+        console.log("It's " + daysLeft + " days until your birthday!");
+    </script>
+</body>
+</html>

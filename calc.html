@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // create a calculator website using javascript
+        // This is a simple calculator that performs addition, subtraction, multiplication, and division.
+        function add(a, b) {
+            return a + b;
+        }
+        function subtract(a, b) {
+            return a - b;
+        }
+        function multiply(a, b) {
+            return a * b;
+        }
+        function divide(a, b) {
+            if (b === 0) {
+                return "Cannot divide by zero";
+            }
+            return a / b;
+        }
+        function calculate() {
+            const num1 = parseFloat(prompt("Enter first number:"));
+            const num2 = parseFloat(prompt("Enter second number:"));
+            const operation = prompt("Enter operation (+, -, *, /):");
+
+            let result;
+            switch (operation) {
+                case '+':
+                    result = add(num1, num2);
+                    break;
+                case '-':
+                    result = subtract(num1, num2);
+                    break;
+                case '*':
+                    result = multiply(num1, num2);
+                    break;
+                case '/':
+                    result = divide(num1, num2);
+                    break;
+                default:
+                    result = "Invalid operation";
+            }
+            alert(`Result: ${result}`);
+        }
+    </script>
+</body>
+</html>
