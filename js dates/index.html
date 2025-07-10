@@ -31,8 +31,16 @@
         console.log(fullYear.getFullYear()); // returns the year (4 digits)
         console.log(fullYear.getMonth()); // returns the month (0-11)
         // for the get month method we need to create an array of months to get the full months
-        const months ["Jan", "Feb" "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
         console.log(months[fullYear.getMonth()]); // returns the month name
+
+        // what is the difference between the get date method and the set date method?
+        // The getDate() method returns the day of the month (1-31) for a specified date according to local time.
+        // The setDate() method sets the day of the month (1-31) for a specified date according to local time.
+        const date = new Date("April 15, 2025");
+        console.log(date.setFullYear(2004));
+        console.log(date.setDate(20)); // sets the date to 20th of the month
+        console.log(date.getDate()); // returns the day of the month (1-31)
 
     </script>
 </body>
