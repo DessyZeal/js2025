@@ -19,3 +19,6 @@ navLinks.addEventListener('click', (e) => {
     navLinks.classList.remove('open');
   }
 });
+
+let name = prompt('What is your name?');
+alert('Hello ' + name + '!');
