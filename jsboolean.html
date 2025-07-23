@@ -7,7 +7,19 @@
 </head>
 <body>
     <script>
-        
+        const hour = new Date().getHours();
+        // The above line retrieves the current hour from the system's date and time.
+        let greeting;
+
+        if (hour > 18) {
+            greeting = "Good evening!";
+        }
+        else {
+            greeting = "Good day!";
+        }
+        // The if-else statement checks if the current hour is greater than 18 (6 PM).
+        // If it is, it sets the greeting to "Good evening!", otherwise it sets it to "Good day!".
+        console.log(greeting);
     </script>
 </body>
 </html>
