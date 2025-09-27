@@ -42,4 +42,15 @@ let student = {
 student.Sciences = "A";
 student.History = "B";
 
-console.log(student);
+console.log(student.subjects);
+console.log(student.grades);
+
+// exercise 5
+// shopping cart
+let cart = ["Laptop", "Mouse", "Keyboard"];
+cart.push("Headphone");
+delete cart[2]; // Remove the item at index 2 (Keyboard)
+// how do i change an item in an array
+cart[0] = "Gaming Laptop";
+
+console.log(cart);
