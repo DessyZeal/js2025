@@ -81,3 +81,27 @@ console.log("Multiplication: " + (x * y));
 console.log("Division: " + (x / y));
 console.log("Modulus: " + (x % y));
 
+// exercise 2
+// assignment Operators
+let score = 50;
+score += 10; // score = score + 10
+score *= 2;
+score -= 30;
+console.log("Final Score:" + score);
+
+// exercise 3
+// comparison and logical operators
+let age1 = 20;
+let hasID = true;
+if (age1 >= 18 && hasID) {
+    console.log("You are allowed to enter.");
+} else {
+    console.log("You are not allowed to enter.");
+}
+
+// exercise 4
+// string operators
+let firstName = "Zaya";
+let lastName = "Coder";
+let fullName = firstName +  " " + lastName;
+console.log("Full Name: " + fullName);
