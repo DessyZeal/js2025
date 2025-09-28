@@ -54,3 +54,14 @@ delete cart[2]; // Remove the item at index 2 (Keyboard)
 cart[0] = "Gaming Laptop";
 
 console.log(cart);
+
+// exercise 6
+// Library System (Mini Project)
+let library = [
+    {title: "Book A", author: "Author A", isBorrowered: false},
+    {title: "Book B", author: "Author B", isBorrowed: true}
+];
+// Add a new book to the library
+library.push({title: "Book C", author: "Author C", isBorrowed: false});
+library.isBorrowed = true; // Mark Book A as borrowed
+console.log(library);
