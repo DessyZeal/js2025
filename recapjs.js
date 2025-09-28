@@ -65,3 +65,19 @@ let library = [
 library.push({title: "Book C", author: "Author C", isBorrowed: false});
 library.isBorrowed = true; // Mark Book A as borrowed
 console.log(library);
+
+// Operators in Javascript
+let a = 10;
+a -= 5; 
+// x = x - 5
+console.log(a);
+// exercise 1
+// Arithmetic Operators
+let x = 10;
+let y = 3;
+console.log("Addition: " + (x + y));
+console.log("Substraction: " + (x - y));
+console.log("Multiplication: " + (x * y));
+console.log("Division: " + (x / y));
+console.log("Modulus: " + (x % y));
+
