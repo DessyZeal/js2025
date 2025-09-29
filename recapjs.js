@@ -113,9 +113,46 @@ isWeekend = false;
 isHoliday = true;
 console.log(isWeekend || isHoliday);
 
+let enteredPassword = true;
+let correctPassword = false;
+if (enteredPassword && correctPassword) {
+    console.log("Access granted");
+} else {
+    console.log("Access not granted");
+}
+
 // exercise 4
 // string operators
 let firstName = "Zaya";
 let lastName = "Coder";
 let fullName = firstName +  " " + lastName;
 console.log("Full Name: " + fullName);
+
+// Control flow in Javascript
+
+// Exercise 4
+// Print the current day of the week using switch statement
+let date = new Date().getDay();
+switch (date) {
+    case 0:
+        console.log("Today is Sunday");
+        break;
+    case 1:
+        console.log("Today is Monday");
+        break;
+    case 2:
+        console.log("Today is Tuesday");
+        break;
+    case 3:
+        console.log("Today is Wednesday");
+        break;
+    case 4:
+        console.log("Today is Thursday");
+        break;
+    case 5:
+        console.log("Today is Friday");
+        break;
+    case 6:
+        console.log("Today is Saturday");
+        break;
+}
