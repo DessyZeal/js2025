@@ -14,7 +14,7 @@ let userDetails = {
     loveCoding: loveCoding,
     favFoods: favFoods
 };
-userDetails.age += 1; // Increment age by 1
+userDetails.age = 23; // Set age to 23
 console.log(userDetails);
 
 // exercise 3
@@ -66,6 +66,16 @@ library.push({title: "Book C", author: "Author C", isBorrowed: false});
 library.isBorrowed = true; // Mark Book A as borrowed
 console.log(library);
 
+let studentInfo = {
+    studentName: "Alice",
+    studentAge: 24,
+    Hobbies: ["Singing", "Painting", "Drawing"]
+};
+studentInfo.studentAge = 26; // Update age
+studentInfo.Hobbies.push("Sports");
+console.log(studentInfo);
+
+
 // Operators in Javascript
 let a = 10;
 a -= 5; 
@@ -98,6 +108,10 @@ if (age1 >= 18 && hasID) {
 } else {
     console.log("You are not allowed to enter.");
 }
+
+isWeekend = false;
+isHoliday = true;
+console.log(isWeekend || isHoliday);
 
 // exercise 4
 // string operators
