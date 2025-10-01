@@ -176,3 +176,17 @@ switch (date) {
         console.log("Today is Saturday");
         break;
 }
+
+let username = prompt("Enter your username:");
+if (username) {
+    console.log("Hello, " + username + "!");
+} else {
+    console.log("Hello, Guest!");
+}
+
+let userName1 = "";
+if (userName1) {
+    console.log("Hello, " + userName1 + "!");
+} else {
+    console.log("Hello, Guest!");
+}
