@@ -190,3 +190,8 @@ if (userName1) {
 } else {
     console.log("Hello, Guest!");
 }
+
+// loops
+for (let i= 1; i<= 5; i++) {
+    console.log(i);
+}
