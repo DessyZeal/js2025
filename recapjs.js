@@ -192,6 +192,6 @@ if (userName1) {
 }
 
 // loops
-for (let i= 1; i<= 5; i++) {
-    console.log(i);
+for (let n = 1; n<=10; n++) {
+    console.log(n);
 }
