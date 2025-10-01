@@ -129,7 +129,27 @@ let fullName = firstName +  " " + lastName;
 console.log("Full Name: " + fullName);
 
 // Control flow in Javascript
+let citizenAge = 21;
 
+if (citizenAge >= 18) {
+    console.log("You can vote");
+} else {
+    console.log("You cannot vote");
+}
+// Exercise 2
+// Traffic light
+let trafficLight = "green";
+switch (trafficLight) {
+    case "red":
+        console.log("Stop");
+        break;
+    case "yellow":
+        console.log("Get ready");
+        break;
+    case "green":
+        console.log("Go");
+        break;
+}
 // Exercise 4
 // Print the current day of the week using switch statement
 let date = new Date().getDay();
