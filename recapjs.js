@@ -184,13 +184,6 @@ if (username) {
     console.log("Hello, Guest!");
 }
 
-let userName1 = "";
-if (userName1) {
-    console.log("Hello, " + userName1 + "!");
-} else {
-    console.log("Hello, Guest!");
-}
-
 // loops
 for (let n = 1; n<=10; n++) {
     console.log(n);
