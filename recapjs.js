@@ -185,6 +185,13 @@ if (username) {
 }
 
 // loops
+// for loop
 for (let n = 1; n<=10; n++) {
     console.log(n);
+}
+// while loop
+let i = 0;
+while (i <= 10) {
+    console.log(i);
+    i++;
 }
