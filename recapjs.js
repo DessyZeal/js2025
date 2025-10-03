@@ -203,6 +203,15 @@ do {
 } while (j <= 5);
 // for...of loop
 fruits = ["Apple", "Banana", "Mango"];
-for (let love of fruits) {
-    console.log(love);
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+// for...in loop
+let student = {
+    name: "John",
+    age: 22,
+    isEnrolled: true
+}
+for (let key in student) {
+    console.log(key + ":" + student[key]);
 }
