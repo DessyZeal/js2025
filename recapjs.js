@@ -195,3 +195,14 @@ while (i <= 10) {
     console.log(i);
     i++;
 }
+// do while loop
+let j = 1;
+do {
+    console.log(j);
+    j++;
+} while (j <= 5);
+// for...of loop
+fruits = ["Apple", "Banana", "Mango"];
+for (let love of fruits) {
+    console.log(love);
+}
