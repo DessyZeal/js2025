@@ -215,3 +215,9 @@ let student = {
 for (let key in student) {
     console.log(key + ":" + student[key]);
 }
+
+// Functions in js
+// function declaration
+function functionName() {
+    alert('Hello World!');
+}
