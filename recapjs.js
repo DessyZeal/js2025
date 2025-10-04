@@ -207,13 +207,13 @@ for (let fruit of fruits) {
     console.log(fruit);
 }
 // for...in loop
-let student = {
+let student1 = {
     name: "John",
     age: 22,
     isEnrolled: true
 }
-for (let key in student) {
-    console.log(key + ":" + student[key]);
+for (let key in student1) {
+    console.log(key + ":" + student1[key]);
 }
 
 // Functions in js
@@ -221,3 +221,18 @@ for (let key in student) {
 function functionName() {
     alert('Hello World!');
 }
+functionName();
+
+// local variables
+function greet() {
+    let message = 'Hello World!';
+    console.log(message);
+}
+greet();
+
+// outer variables
+let name = "Ude Desire";
+function codeWriter() {
+    console.log("Hello " + name + ", you are a great coder!");
+}
+codeWriter();
