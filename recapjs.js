@@ -185,6 +185,11 @@ if (username) {
 }
 
 let myVar = 10;
+if (typeof myVar === 'number') {
+    console.log("This is a number");
+} else if (typeof myVar === 'string') {
+    console.log("This is a string");
+}
 // loops in javascript
 // for loop
 for (let n = 1; n<=10; n++) {
