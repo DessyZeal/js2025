@@ -184,7 +184,8 @@ if (username) {
     console.log("Hello, Guest!");
 }
 
-// loops
+let myVar = 10;
+// loops in javascript
 // for loop
 for (let n = 1; n<=10; n++) {
     console.log(n);
