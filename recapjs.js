@@ -190,6 +190,7 @@ if (typeof myVar === 'number') {
 } else if (typeof myVar === 'string') {
     console.log("This is a string");
 }
+
 // loops in javascript
 // for loop
 for (let n = 1; n<=10; n++) {
@@ -237,8 +238,8 @@ function greet() {
 greet();
 
 // outer variables
-let name = "Ude Desire";
+let name1 = "Ude Desire";
 function codeWriter() {
-    console.log("Hello " + name + ", you are a great coder!");
+    console.log("Hello " + name1 + ", you are a great coder!");
 }
 codeWriter();
