@@ -243,3 +243,8 @@ function codeWriter() {
     console.log("Hello " + name1 + ", you are a great coder!");
 }
 codeWriter();
+
+// setTimeout method/function
+setTimeout(() => {
+    console.log("This runs after 2s");
+}, 2000);
