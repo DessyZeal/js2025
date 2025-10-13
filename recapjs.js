@@ -246,5 +246,20 @@ codeWriter();
 
 // setTimeout method/function
 setTimeout(() => {
-    console.log("This runs after 2s");
-}, 2000);
+    console.log("This runs after 4s");
+}, 4000);
+
+// exercises on function
+// exercise 1
+// write a function declaration sayHello that takes a name and prints "Hello, [name]!" to the console.
+function sayHello(name2) {
+    console.log(`Hello, ${name2}!`)
+}
+sayHello("Ude Desire");
+
+// exercise 2
+// write a function expression that subtracts 2 numbers
+const sub = function subt(numa, numb) {
+    return numa - numb;
+}
+console.log(sub(12, 2));
