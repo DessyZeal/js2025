@@ -263,3 +263,13 @@ const sub = function subt(numa, numb) {
     return numa - numb;
 }
 console.log(sub(12, 2));
+
+// exercise 3
+// write an arrow function isEven that returns true is a number is event, else false
+const isEven = (num) => {
+    return num % 2 ===0? "Is Even": "Is Odd"
+}
+console.log(isEven(4));
+
+// arrays in javascript
+const fruits = ["Orange", "Mango", "Gauva", "Kiwi", "Banana"];
