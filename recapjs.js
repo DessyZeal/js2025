@@ -273,5 +273,18 @@ console.log(isEven(4));
 
 // arrays in javascript
 let fruities = ["Orange", "Mango", "Guava", "Kiwi", "Banana"];
-console.log(fruities[0]);
-console.log(fruities[4]);
+// looping through an array
+for (let fruity of fruities) {
+    console.log(fruity);
+}
+// checking if banana exists in the arrray
+if(fruities.includes("Banana")) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+// Add a new element to the start of the array
+fruities.unshift("Pineapple");
+// Remove the array in the middle
+fruities.splice(2, 1); // Remove 1 element at index 2
+console.log(fruities);
