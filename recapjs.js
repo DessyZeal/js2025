@@ -272,4 +272,6 @@ const isEven = (num) => {
 console.log(isEven(4));
 
 // arrays in javascript
-const fruits = ["Orange", "Mango", "Gauva", "Kiwi", "Banana"];
+let fruities = ["Orange", "Mango", "Guava", "Kiwi", "Banana"];
+console.log(fruities[0]);
+console.log(fruities[4]);
