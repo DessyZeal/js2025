@@ -299,3 +299,6 @@ let pupil = {
 // acessing the object properties
 console.log(pupil.pupilAge);
 console.log(pupil["pupilName"]);
+// adding a new property to an object
+pupil.school = "Sunshine Academy";
+console.log(pupil);
