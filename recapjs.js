@@ -288,3 +288,14 @@ fruities.unshift("Pineapple");
 // Remove the array in the middle
 fruities.splice(2, 1); // Remove 1 element at index 2
 console.log(fruities);
+
+// objects in javascript
+let pupil = {
+    pupilName: "Zaya",
+    pupilAge: 6,
+    isChild: true,
+    favToys: ["Doll", "Car", "Ball"]
+};
+// acessing the object properties
+console.log(pupil.pupilAge);
+console.log(pupil["pupilName"]);
