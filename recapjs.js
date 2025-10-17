@@ -302,3 +302,11 @@ console.log(pupil["pupilName"]);
 // adding a new property to an object
 pupil.school = "Sunshine Academy";
 console.log(pupil);
+// object methods
+let userData = {
+    username1 : "World !",
+    greet: function() {
+        console.log("Hello " + this.username1);
+    }
+};
+userData.greet();
