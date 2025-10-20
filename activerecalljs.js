@@ -19,5 +19,19 @@ if (isRegistered) {
     console.log(nameZ + " is not registered.");
 }
 
+// create an array with different data types and print the type of each element
 let Diff = ["JAVA", 23, true];
-console.log(typeof(Diff));
+for (let i = 0; i < Diff.length; i++) {
+    console.log(typeof(Diff[i]));
+}
+
+// Mini Project
+let userN = "Alice Cooper";
+let userA = 30;
+let userC = "USA";
+let userH = ["Playing Tennis", "Dancing", "Travelling"];
+console.log("User Profile:");
+console.log("Name: " + userN);
+console.log("Age: " + userA);
+console.log("Country: " + userC);
+console.log("Hobbies: " + userH.join(", "));
