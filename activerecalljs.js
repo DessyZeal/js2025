@@ -60,12 +60,10 @@ if (winning) {
 console.log("Player's score: " + score);
 
 // Ask a user for two numbers and perform all arithmetic operations on them
-let number1 = prompt("Enter the first number:");
-let number2 = prompt("Enter the second number:");
+let number1 = Number(prompt("Enter the first number:"));
+let number2 = Number(prompt("Enter the second number:"));
 let Operator = prompt("Enter an operator (+, -, *, /, %):");
 let result;
-number1 = parseFloat(number1);
-number2 = parseFloat(number2);
 switch (Operator) {
     case "+":
         result = number1 + number2;
@@ -86,3 +84,46 @@ switch (Operator) {
         "Invalid operator!";
 }
 alert("Result: " + result);
+
+// Control Flow
+let numCheck = Number(prompt("Enter Number"))
+if (numCheck > 0) {
+    console.log("This number is positive");
+} else if (numCheck < 0) {
+    console.log("This number is negative");
+} else if (numCheck === 0) {
+    console.log("This number is zero");
+} else {
+    console.log("Undefined");
+}
+// Create a switch statement that prints the days of the week based on a number from 1-7
+let dayNum = Number(prompt("Enter a number between 1-7:"))
+let dayName;
+
+switch (dayNum) {
+    case 1:
+        dayName = "Sunday"
+        break;
+    case 2:
+        dayName = "Monday"
+        break;
+    case 3:
+        dayName = "Tuesday"
+        break;
+    case 4:
+        dayName = "Wednesday"
+        break;
+    case 5:
+        dayName = "Thursday"
+        break;
+    case 6:
+        dayName = "Friday"
+        break;
+    case 7: 
+        dayName = "Saturday"
+        break;
+    default:
+        break;
+}
+alert(dayName);
+
