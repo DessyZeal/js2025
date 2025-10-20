@@ -10,3 +10,14 @@ let num2 = 12;
 let num3 = 20;
 let average = (num1 + num2 + num3) % 3;
 console.log("The average of " + num1 + ", " + num2 + ", and " + num3 + " is " + average + ".");
+
+// create a variable with boolean value and use it in an if statement
+let isRegistered = true;
+if (isRegistered) {
+    console.log(nameZ + " is registered.");
+} else {
+    console.log(nameZ + " is not registered.");
+}
+
+let Diff = ["JAVA", 23, true];
+console.log(typeof(Diff));
