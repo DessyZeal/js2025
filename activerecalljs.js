@@ -35,3 +35,10 @@ console.log("Name: " + userN);
 console.log("Age: " + userA);
 console.log("Country: " + userC);
 console.log("Hobbies: " + userH.join(", "));
+
+// Operators
+let Beans = 900;
+let Fish = 1000;
+let Maggi = 200;
+let totalCost = (Beans + Fish + Maggi);
+console.log("Total cost: " + totalCost + "Naira" );
