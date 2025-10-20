@@ -42,3 +42,47 @@ let Fish = 1000;
 let Maggi = 200;
 let totalCost = (Beans + Fish + Maggi);
 console.log("Total cost: " + totalCost + "Naira" );
+
+// use logical operator to check if a user is logged in and registered
+let userLoggedIn = true;
+let userRegistered = true;
+if (userLoggedIn && userRegistered) {
+    console.log("User can access the dashboard.");
+} else {
+    console.log("Access denied. Please log in and register.");
+}
+// write a program that increases a score by 10 points if a player wins
+let score = 0;
+let winning = true;
+if (winning) {
+    score += 10;
+}
+console.log("Player's score: " + score);
+
+// Ask a user for two numbers and perform all arithmetic operations on them
+let number1 = prompt("Enter the first number:");
+let number2 = prompt("Enter the second number:");
+let Operator = prompt("Enter an operator (+, -, *, /, %):");
+let result;
+number1 = parseFloat(number1);
+number2 = parseFloat(number2);
+switch (Operator) {
+    case "+":
+        result = number1 + number2;
+        break;
+    case "-":
+        result = number1 - number2;
+        break;
+    case "*":
+        break;
+    case "/":
+        if (num2 !== 0) {
+            result = number1 / number2
+        } else {
+            result = "Error, Cannot divide by 0";
+        }
+        break;
+    default:
+        "Invalid operator!";
+}
+alert("Result: " + result);
