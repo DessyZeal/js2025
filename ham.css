@@ -94,6 +94,4 @@ body {
     z-index: 100;
   }
   .nav-links.open {display: flex;}
-   /* .close-btn {
-    display: block; /* Show menu when open */
-  }
+}
