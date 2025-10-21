@@ -127,3 +127,14 @@ switch (dayNum) {
 }
 alert(dayName);
 
+// Mini project
+let todaysWeatherSun = true;
+let todaysWeatherRai = true;
+
+if (todaysWeatherSun) {
+    console.log("It's sunny, wear something light");
+} else if (todaysWeatherRai) {
+    console.log("It's cold, wear a sweat shirt");
+} else {
+    console.log("I can't tell the weather now try again later");
+}
