@@ -17,9 +17,9 @@ document.title = "DOM for beginners"
 
 const personName = " Desire !";
 const welcomeMsg = document.getElementById("welcome-msg");
-
 welcomeMsg.textContent += personName === "" ? `Guest` : personName;
 
+document.getElementById("date").textContent = "Date: " + Date();
 // querySelector
 const msg = document.querySelector(".para").innerHTML = "This paragraph is selected using querySelector";
 
