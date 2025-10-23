@@ -20,8 +20,20 @@ const welcomeMsg = document.getElementById("welcome-msg");
 welcomeMsg.textContent += personName === "" ? `Guest` : personName;
 
 document.getElementById("date").textContent = "Date: " + Date();
+
+document.write("I love javascript");
 // querySelector
 const msg = document.querySelector(".para").innerHTML = "This paragraph is selected using querySelector";
 
+// changing the attributes of html elements
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
 
 
