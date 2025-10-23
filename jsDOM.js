@@ -18,4 +18,8 @@ const welcomeMsg = document.getElementById("welcome-msg");
 
 welcomeMsg.textContent += personName === "" ? `Guest` : personName;
 
+// querySelector
+const msg = document.querySelector(".para").innerHTML = "This paragraph is selected using querySelector";
+
+
 
