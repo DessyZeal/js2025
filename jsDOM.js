@@ -13,7 +13,7 @@ document.body.style.backgroundColor = "lightblue"
 // changing the title
 document.title = "DOM for beginners"
 
-const personName = " DESIRE";
+const personName = " Desire !";
 const welcomeMsg = document.getElementById("welcome-msg");
 
 welcomeMsg.textContent += personName === "" ? `Guest` : personName;
