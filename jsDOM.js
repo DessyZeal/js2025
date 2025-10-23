@@ -1,5 +1,7 @@
 // finding html elements by Id
-const greeting = document.getElementById("greeting").innerHTML = "Hello World!";
+const greeting = document.getElementById("greeting");
+greeting.innerHTML = "<strong>Hello, Desire</strong>";
+// greeting.textContent =" Welcome to DOM manipulation in Javascript";
 const intro = document.getElementById("intro").textContent = "Introduction to DOM in Javascript";
 console.log(typeof(intro));
 // finding html elements by tagName

@@ -138,3 +138,6 @@ if (todaysWeatherSun) {
 } else {
     console.log("I can't tell the weather now try again later");
 }
+
+// javascript onclick method
+
