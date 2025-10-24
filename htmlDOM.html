@@ -6,13 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="pic_bulboff.gif" alt="what" id="myImage" style="width:100px">
-    <!-- <p>
-        <button type="button" onclick="light(0)">Turn off Lights</button>
-        <button type="button" onclick="light(1)">Turn on Lights</button>
-    </p> -->
-    
-
+    <img src="./img/pic_bulboff.gif" alt="" id="bulb">
+    <p>
+        <button type="button" onclick="document.getElementById('bulb').src='./img/pic_bulboff.gif'">Turn off Lights</button>
+        <button type="button" onclick="document.getElementById('bulb').src='./img/pic_bulbon.gif'">Turn on Lights</button>
+    </p>
     <script src="jsDOM.js"></script>
 </body>
 </html>

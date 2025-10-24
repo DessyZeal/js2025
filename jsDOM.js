@@ -26,14 +26,8 @@ document.write("I love javascript");
 const msg = document.querySelector(".para").innerHTML = "This paragraph is selected using querySelector";
 
 // changing the attributes of html elements
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "pic_bulboff.gif"
-  } else {
-    pic = "pic_bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
+const light = (sw) => {
+    const pic = sw == 0 ? "./img/pic_bulboff.gif" : "./img/pic_bulbon.gif";
+    document.getElementById("bulb").src = pic;
 }
-
 
