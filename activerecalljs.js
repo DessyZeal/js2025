@@ -141,3 +141,11 @@ if (todaysWeatherSun) {
 
 // javascript onclick method
 
+const studentBio = {
+    nameStu : "Anaya",
+    ageStu : 22,
+    greeting : function () {
+        console.log("I am " + this.nameStu + " and I am " + this.ageStu + " years old.");
+    }
+};
+studentBio.greeting();
