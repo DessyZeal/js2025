@@ -13,5 +13,15 @@
     <button onclick="this.innerHTML=Date()">The time is</button>
     <br>
     <div onmouseover="this.style.color = 'red'">A Div in RED</div>
+    <button id="btn">Click Me</button>
+    <p id="message"></p>
+    <script>
+        const button = document.getElementById('btn');
+        const message = document.getElementById('message');
+
+        button.addEventListener('click', () => {
+            message.textContent = "Button was Clicked!";
+        })
+    </script>
 </body>
 </html>
