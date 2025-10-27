@@ -15,6 +15,7 @@
     <div onmouseover="this.style.color = 'red'">A Div in RED</div>
     <button id="btn">Click Me</button>
     <p id="message"></p>
+    <button id="year" onclick="displayYear()">Show Year</button>
     <script>
         const button = document.getElementById('btn');
         const message = document.getElementById('message');
@@ -22,6 +23,10 @@
         button.addEventListener('click', () => {
             message.textContent = "Button was Clicked!";
         })
+
+        function displayYear() {
+            document.getElementById('year').innerHTML = new Date().getFullYear();
+        }
     </script>
 </body>
 </html>
