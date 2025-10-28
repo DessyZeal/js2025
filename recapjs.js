@@ -310,3 +310,20 @@ let userData = {
     }
 };
 userData.greet();
+
+// events in javascript
+// exercise 1
+const btnClick = document.getElementById("btnClick");
+const myBtn = document.getElementById("myBtn");
+myBtn.addEventListener("click", () => {
+    btnClick.textContent = "Button has been Clicked!";
+}) 
+
+// exercise 2
+const mouseOver = document.getElementById("mouseOver");
+mouseOver.addEventListener("mouseover", () => {
+    mouseOver.style.color = "red";
+})
+mouseOver.addEventListener("mouseout", () => {
+    mouseOver.style.color = "black";
+})
