@@ -327,3 +327,33 @@ mouseOver.addEventListener("mouseover", () => {
 mouseOver.addEventListener("mouseout", () => {
     mouseOver.style.color = "black";
 })
+
+// exercise 3
+const Nainput = document.getElementById('inputBox');
+const display = document.getElementById('displayText');
+Nainput.addEventListener('input', () => {
+    display.textContent = "Welcome " + Nainput.value;
+})
+Nainput.style.color = "green";
+
+// exercise 4
+const form = document.getElementById('thisForm');
+const field = document.getElementById('nameField');
+const Btn = document.getElementById('submitBtn');
+const output = document.getElementById('formResult');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    output.textContent = field.value + " " + "Your form has been submitted successfully!";
+})
+
+// Dates In Javascript
+// exercises 1
+const currentDate = new Date();
+console.log("Current Date and Time: " + currentDate.toDateString());
+
+// exercise 2
+const nowDate = new Date("2025-08-28");
+const nextBirthday = new Date("2026-03-15");
+const diff = nextBirthday - nowDate;
+const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+console.log("Days until next birthday: " + days);

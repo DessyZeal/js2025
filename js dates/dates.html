@@ -6,12 +6,21 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="todayDate"></p>
     <script>
+        const dateElement = document.getElementById('todayDate');
+        dateElement.textContent = "Todays Date is: "+ new Date();
+        console.log(Date.now())
+        const start = new Date("2004-03-15");
+        const end = new Date("2025-08-28");
+        const diff = end - start;
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        console.log("How many days i have been on earth: " + days);
         // welcome to dates in javascript
         const today = new Date();
         console.log(today);
         // how to display the date on the page
-        document.write(`Today's date is: + ${today}`);
+        // dateElement.textContent = `Today's date is: ${today}`;
         // what does the toDateString() method do?
         // The toDateString() method converts a date to a string, using a human-readable format.
         // and the current time zone, and returns the date portion of the date as a string.
@@ -52,6 +61,7 @@
             text = "Today is after future date.";
         }
         console.log(text);
+
     </script>
 </body>
 </html>
