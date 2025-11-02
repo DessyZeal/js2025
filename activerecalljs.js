@@ -1,3 +1,37 @@
+// DOM Manipulation
+const inputBox =  document.getElementById('enterTask');
+const addBtn = document.getElementById('addBtn');
+const taskList = document.getElementById('taskList');
+
+// Event listener
+addBtn.addEventListener('click', () => {
+    const task = inputBox.value;
+    if (task) {
+        const li = document.createElement('li');
+        li.textContent = task;
+        taskList.appendChild(li);
+    }
+    inputBox.value = '';
+})
+// clear input after task is added
+inputBox.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        addBtn.click();
+    }   
+});
+// make tasks removable
+taskList.addEventListener('click', (e) => {
+    if (e.target.tagName === 'LI') {
+        e.target.remove();
+    }
+});
+// mark task as completed
+taskList.addEventListener('dblclick', (e) => {
+    if (e.target.tagName === 'LI') {
+        e.target.style.textDecoration = e.target.style.textDecoration === 'line-through' ? 'none' : 'line-through';
+    }
+});
+
 // Variables and DataType
 let nameZ = "Zaya Coder";
 let ageZ = 7;

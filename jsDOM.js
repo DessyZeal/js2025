@@ -56,6 +56,12 @@ function updatebdCountdown() {
     bdhoursEl.innerText = `${hoursbd} Hours`;
     bdminsEl.innerText = `${minsbd} Minutes`;
     bdsecsEl.innerText = `${secsbd} Seconds`;
+
+    // if its my birthday say Happy Birthday Desire
+    if (diffbd <= 0) {
+        clearInterval(updatebdCountdown);
+        bdcounterEl.innerHTML = "<h1>🎊Happy Birthday Desire!🎊</h1>";
+    }
 }
 
 setInterval(updatebdCountdown, 1000);
